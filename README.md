@@ -1,44 +1,42 @@
-# Master_Statistics_Repo
-
-Repository for my master's degree graduation work
+# Data Science Skills
 
 Courses Taken at Georgia Tech:
 
 ## Statistics Courses
 
-Math 6263 Testing Statistical Hypotheses - Fall 2021
+Testing Statistical Hypotheses
 
-ISyE 6402 Time Series Analysis - Fall 2020
+Time Series Analysis
 
-ISyE 6412 Theoretical Statistics - Fall 2019
+Theoretical Statistics
 
-ISyE 6414 Regression Analysis - Fall 2019
+Regression Analysis
 
-ISyE 6416 Computational Statistics - Spring 2020
+Computational Statistics
 
-ISyE 6420 Bayesian Statistics - Fall 2020
+Bayesian Statistics
 
-ISyE 7405 Multivariate Data Analysis - Fall 2019
+Multivariate Data Analysis
 
-ISyE 7406 Data Mining and Statistical Learning - Spring 2020
+Data Mining and Statistical Learning
 
 ## Computer Science Courses:
 
-CS 1331 Objected-oriented Programming - Fall 2019
+Object-Oriented Programming
 
-CS 1332 Data Structures and Algorithms - Spring 2020
+Data Structures and Algorithms
 
-CS 2110 Computer Organizations and Programming - Summer 2020
+Computer Organization and Programming
 
-CS 2200 Computer Systems and Networks - Spring 2021
+Computer Systems and Networks
 
-CS 4400 Database Systems - Fall 2020
+Database Systems
 
-CS 7450 Information Visualization - Fall 2020
+Information Visualization
 
-CS 7641 Machine Learning - Summer 2020
+Machine Learning
 
-CS 8803 Systems for Machine Learning - Fall 2021
+Systems for Machine Learning
 
 ## License
 This repository is licensed under the [GNU Affero General Public License](LICENSE) 
