@@ -1,6 +1,18 @@
 # Data Science Skills
 
-Courses Taken at Georgia Tech:
+This repository highlights coursework in Statistics and Computer Science that forms the foundation for modern data science and machine learning practice. These courses were chosen for their emphasis on both theoretical understanding and practical application, which are essential for solving real-world data problems and contributing to research in computational fields.
+
+From core topics like regression, hypothesis testing, and multivariate analysis to advanced areas such as Bayesian inference, data mining, and machine learning systems, these courses provide a deep grounding in how to reason with data, design experiments, build predictive models, and evaluate results with statistical rigor.
+
+In parallel, the computer science coursework strengthens computational skills — from data structures and systems-level programming to neural networks, data visualization, and distributed ML infrastructure — ensuring the ability to build and deploy scalable, research-grade analytical tools.
+
+Together, this background supports work in areas such as:
+
+* Machine learning theory and application
+
+* Probabilistic modeling and Bayesian inference
+
+* Data engineering and scalable systems
 
 ## Statistics Courses
 
