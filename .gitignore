@@ -1,0 +1,36 @@
+# pycharm-related
+.idea/
+
+# macOS 
+.DS_Store
+.Trashes
+._*
+.Spotlight-V100
+.TemporaryItems
+.fseventsd
+Icon?
+venv/
+.venv/
+env/
+.env/
+
+# Python-specific
+# Python-specific
+__pycache__/
+*.pyc
+*.pyd
+*.pyo
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.tox/
+dist/
+build/
+*.egg
+
+# Other common ignored files
+*.log
+*.bak
+*.swp
+*.swo
+
