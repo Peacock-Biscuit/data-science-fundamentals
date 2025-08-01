@@ -1,0 +1,65 @@
+<div class="login">
+    <h1>Process Pool</h1> <br />
+    <h3>Pool ID: {{poolID}}</h3> <br />
+    <form nz-form [formGroup]="validateForm" >
+        <nz-form-item>
+          <nz-form-label nzRequired nzFor="date">Processed Date</nz-form-label>
+          <nz-form-control>
+            <input nz-input formControlName="date" type="date" id="date" />
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+            <nz-form-label nzRequired>Pool Status</nz-form-label>
+            <nz-form-control [nzSpan]="14" [nzOffset]="1">
+              <input type="radio" value="Positive" (change)="radioChangeHandler($event)" name="status">Positive   
+              <input type="radio" value="Negative" (change)="radioChangeHandler($event)" name="status">Negative
+            </nz-form-control>
+        </nz-form-item>
+        <div *ngIf="poolStatus == 'Positive'">
+            <nz-table>
+                <thead>
+                  <tr>
+                    <th>Test ID</th>
+                    <th>Date Tested</th>
+                    <th>Test Result</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let data of listOfData">
+                    <td>{{ data.testID }}</td>
+                    <td>{{ data.dateTested }}</td>
+                    <td>
+                        <nz-form-item>
+                            <nz-form-control>
+                                <select #t (change)="testResultTypeCall(t.value)">
+                                    <option *ngFor="let type of types" [value]="type">{{type}}</option>
+                                  </select>
+                            </nz-form-control>
+                          </nz-form-item>
+                    </td>
+                  </tr>
+                </tbody>
+              </nz-table>
+        </div>
+        <div *ngIf="poolStatus == 'Negative'">
+            <nz-table>
+                <thead>
+                  <tr>
+                    <th>Test ID</th>
+                    <th>Date Tested</th>
+                    <th>Test Result</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let data of listOfData">
+                    <td>{{ data.testID }}</td>
+                    <td>{{ data.dateTested }}</td>
+                    <td>{{ data.testResult }}</td>
+                  </tr>
+                </tbody>
+              </nz-table>
+        </div>
+    </form>
+    <button nz-button nzType="primary" style="margin-right: 500px; margin-left: 50px"><a routerLink="/labTechHome">Back</a></button>
+    <button nz-button nzType="primary"><a routerLink="/labTechHome">Process Pool</a></button>
+</div>

@@ -1,0 +1,58 @@
+<div class="create-testing-site"> 
+    <form nz-form>
+        <nz-form-label> Create a Testing Site </nz-form-label>
+        <nz-form-item>
+            <nz-form-label>New Site Name</nz-form-label>
+            <nz-form-control>
+                <input nz-input name="siteName" id="siteName">
+              </nz-form-control>
+        </nz-form-item>    
+        <nz-form-item>
+            <nz-form-label>City</nz-form-label>
+            <nz-form-control>
+                <input nz-input name="city" id="city">
+              </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+            <nz-form-label>State</nz-form-label>
+            <nz-form-control>
+                <input nz-input name="state" length=2 id="state">
+              </nz-form-control>
+        </nz-form-item> 
+        <nz-form-item>
+        <nz-form-label>ZIP Code</nz-form-label>
+            <nz-form-control>
+                <input nz-input name="zip" length=5 type="integer" id="zip">
+              </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+            <a nz-dropdown [nzDropdownMenu]="menu">
+                Location
+                <i nz-icon nzType="down"></i>
+              </a>
+              <nz-dropdown-menu #menu="nzDropdownMenu">
+                <ul nz-menu nzSelectable>
+                  <li nz-menu-item>West</li>
+                  <li nz-menu-item>East</li>
+                </ul>
+              </nz-dropdown-menu>
+        </nz-form-item>
+        <nz-form-item>
+            <a nz-dropdown [nzDropdownMenu]="menu">
+                Site Tester
+                <i nz-icon nzType="down"></i>
+              </a>
+              <nz-dropdown-menu #menu="nzDropdownMenu">
+                <ul nz-menu nzSelectable>
+                  <li nz-menu-item>Tester 1</li>
+                  <li nz-menu-item>Tester 2</li>
+                </ul>
+              </nz-dropdown-menu>
+        </nz-form-item>
+        <nz-form-item>
+            <nz-form-control>
+                <button nz-button nzType="primary">Submit</button>
+              </nz-form-control>
+        </nz-form-item>
+    </form>
+</div>

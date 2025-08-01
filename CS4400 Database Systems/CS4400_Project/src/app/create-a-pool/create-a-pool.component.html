@@ -1,0 +1,31 @@
+<div class="create-a-pool">
+  <form nz-form>
+      <h1>Create a Pool</h1>
+      <nz-form-label> Pool ID </nz-form-label>
+        <input nz-input placeholder=""/>
+      <nz-table #screen10table [nzData]="listOfData" nzTableLayout="fixed">
+        <thead>
+          <tr>
+            <th *ngFor="let column of listOfColumn" [nzSortFn]="column.compare" [nzSortPriority]="column.priority">{{ column.title }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let data of screen10table.data">
+            <td> {{ data.testID }} </td>
+            <td> {{ data.dateTested }} </td>
+            <td>
+              <label nz-checkbox></label>
+            </td>
+          </tr>
+        </tbody>
+      </nz-table>
+      <nz-form-item>
+        <nz-form-control>
+          <button nz-button nzType="primary">Back (Home)</button>
+        </nz-form-control>
+        <nz-form-control>
+          <button nz-button nzType="primary" >Create Pool</button>
+        </nz-form-control>
+      </nz-form-item>
+  </form>    
+</div>

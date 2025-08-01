@@ -1,0 +1,19 @@
+.login {
+    margin: auto;
+    margin-top: 70px;
+    width: 50%;
+    align-content: center;
+    padding: 10px;
+  }
+
+  [nz-form] {
+    max-width: 600px;
+  }
+
+  .phone-select {
+    width: 70px;
+  }
+
+  .register-area {
+    margin-bottom: 8px;
+  }

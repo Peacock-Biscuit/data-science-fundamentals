@@ -1,0 +1,62 @@
+<div class="sign-up-for-a-test">
+  <form nz-form>
+      <h1>Signup for a test</h1>
+      <nz-form-label> Testing Site </nz-form-label>
+        <nz-select style="width: 30%;">
+          <nz-option nzValue="ALL" nzLabel="ALL"></nz-option>
+          <nz-option nzValue="West Village" nzLabel="West Village"></nz-option>
+          <nz-option nzValue="Stamps Health Services" nzLabel="Stamps Health Services"></nz-option>
+          <nz-option nzValue="North Avenue (Centenial Room)" nzLabel="North Avenue (Centenial Room)"></nz-option>
+          <nz-option nzValue="Kennesaw State University" nzLabel="Kennesaw State University"></nz-option>
+          <nz-option nzValue="GT Connector" nzLabel="GT Connector"></nz-option>
+          <nz-option nzValue="GT Catholic Center" nzLabel="GT Catholic Center"></nz-option>
+          <nz-option nzValue="Fulton County Board of Health" nzLabel="Fulton County Board of Health"></nz-option>
+          <nz-option nzValue="Curran St Parking Deck" nzLabel="Curran St Parking Deck"></nz-option>
+          <nz-option nzValue="Coda Building" nzLabel="Coda Building"></nz-option>
+          <nz-option nzValue="CCBOH WIC Clinic" nzLabel="CCBOH WIC Clinic"></nz-option>
+          <nz-option nzValue="Caddell Building" nzLabel="Caddell Building"></nz-option>
+          <nz-option nzValue="Bobby Dodd Stadium" nzLabel="Bobby Dodd Stadium"></nz-option>
+        </nz-select>  
+      <br>
+      <nz-form-label> Date & Time </nz-form-label>
+      <nz-range-picker
+        [nzShowTime]="{ nzFormat: 'HH:mm' }"
+        nzFormat="yyyy-MM-dd HH:mm"
+        (ngModelChange)="onChange($event)"
+        (nzOnCalendarChange)="onCalendarChange($event)"
+        (nzOnOk)="onOk($event)"
+      ></nz-range-picker>
+      <br>
+      <nz-table #screen7table [nzData]="listOfData" nzTableLayout="fixed">
+        <thead>
+            <tr>
+              <th *ngFor="let column of listOfColumn" [nzSortFn]="column.compare" [nzSortPriority]="column.priority">{{ column.title }}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let data of screen7table.data">
+                <td>{{ data.date}}</td>
+                <td>{{ data.time}}</td>
+                <td>{{ data.siteAddress}}</td>
+                <td>{{ data.testSite}}</td>
+                <td>
+                  <label nz-radio></label>
+                </td>
+            </tr>
+        </tbody>
+        </nz-table>
+        <nz-form-item>
+            <nz-form-control>
+                <button nz-button nzType="primary">Back (Home)</button>
+            </nz-form-control>
+            <nz-form-control>
+                <button nz-button nzType="default">Filter</button>
+                <span> &nbsp;&nbsp;</span>
+                <button nz-button nzType="default">Reset</button>
+            </nz-form-control>
+            <nz-form-control>
+                <button nz-button nzType="primary">Sign Up</button>
+            </nz-form-control>
+        </nz-form-item>
+  </form>
+</div>

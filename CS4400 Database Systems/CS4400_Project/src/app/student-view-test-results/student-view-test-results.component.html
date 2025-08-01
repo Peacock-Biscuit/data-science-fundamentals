@@ -1,0 +1,41 @@
+<div class="studentViewTestResults">
+    <form nz-form>
+        <h1>Student View Test Results</h1>
+        <nz-form-label> Status </nz-form-label>
+        <nz-select>
+        <nz-option nzValue="all" nzLabel="ALL"></nz-option>
+        <nz-option nzValue="positive" nzLabel="Positive"></nz-option>
+        <nz-option nzValue="negative" nzLabel="Negative"></nz-option>
+        <nz-option nzValue="pending" nzLabel="Pending"></nz-option>
+        </nz-select>
+        <nz-form-label> Timeslot Date </nz-form-label>
+        <nz-range-picker></nz-range-picker>
+        <nz-table #screen4table [nzData]="listOfData" nzTableLayout="fixed">
+        <thead>
+            <tr >
+              <th *ngFor="let column of listOfColumn" [nzSortFn]="column.compare" [nzSortPriority]="column.priority">{{ column.title }}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let data of screen4table.data">
+                <td>{{ data.testID }}</td>
+                <td>{{ data.timeslotDate }}</td>
+                <td>{{ data.dataProcessed }}</td>
+                <td>{{ data.poolStatus }}</td>
+                <td>{{ data.status }}</td>
+            </tr>
+        </tbody>
+
+        </nz-table>
+        <nz-form-item>
+            <nz-form-control>
+                <button nz-button nzType="primary">Back (Home)</button>
+            </nz-form-control>
+            <nz-form-control>
+                <button nz-button nzType="default">Filter</button>
+                <span> &nbsp;&nbsp;</span>
+                <button nz-button nzType="default">Reset</button>
+            </nz-form-control>
+        </nz-form-item>
+    </form>
+</div>

@@ -1,0 +1,74 @@
+<div class="aggregate-test-results">
+    <form nz-form>
+        <h1>Agregate Test Results</h1>
+        <nz-form-label> Location </nz-form-label>
+        <nz-select>
+            <nz-option nzValue="all" nzLabel="ALL"></nz-option>
+            <nz-option nzValue="east" nzLabel="East"></nz-option>
+            <nz-option nzValue="west" nzLabel="West"></nz-option>
+        </nz-select>  
+        <nz-form-label> Housing </nz-form-label>
+        <nz-select style="width: 20%;">
+            <nz-option nzValue="Greek Housing" nzLabel="Greek Housing"></nz-option>
+            <nz-option nzValue="Student Housing" nzLabel="Student Housing"></nz-option>
+            <nz-option nzValue="Off-campus House" nzLabel="Off-campus House"></nz-option>
+            <nz-option nzValue="Off-campus Apartment" nzLabel="Off-campus Apartment"></nz-option>
+        </nz-select>    
+        <nz-form-label> Testing Site </nz-form-label>
+        <nz-select style="width: 30%;">
+            <nz-option nzValue="ALL" nzLabel="ALL"></nz-option>
+            <nz-option nzValue="West Village" nzLabel="West Village"></nz-option>
+            <nz-option nzValue="Stamps Health Services" nzLabel="Stamps Health Services"></nz-option>
+            <nz-option nzValue="North Avenue (Centenial Room)" nzLabel="North Avenue (Centenial Room)"></nz-option>
+            <nz-option nzValue="Kennesaw State University" nzLabel="Kennesaw State University"></nz-option>
+            <nz-option nzValue="GT Connector" nzLabel="GT Connector"></nz-option>
+            <nz-option nzValue="GT Catholic Center" nzLabel="GT Catholic Center"></nz-option>
+            <nz-option nzValue="Fulton County Board of Health" nzLabel="Fulton County Board of Health"></nz-option>
+            <nz-option nzValue="Curran St Parking Deck" nzLabel="Curran St Parking Deck"></nz-option>
+            <nz-option nzValue="Coda Building" nzLabel="Coda Building"></nz-option>
+            <nz-option nzValue="CCBOH WIC Clinic" nzLabel="CCBOH WIC Clinic"></nz-option>
+            <nz-option nzValue="Caddell Building" nzLabel="Caddell Building"></nz-option>
+            <nz-option nzValue="Bobby Dodd Stadium" nzLabel="Bobby Dodd Stadium"></nz-option>
+        </nz-select>  
+        <br>
+        <nz-form-label> Date Processed </nz-form-label>
+        <nz-range-picker></nz-range-picker>
+        <br>
+        <nz-table #screen6table>
+        <thead>
+            <tr>
+            <th >Total</th>
+            <th>SUM (to be added)</th>
+            <th>Percentage (to be added)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Positive</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Negative</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Pending</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+        </nz-table>
+        <nz-form-item>
+            <nz-form-control>
+                <button nz-button nzType="primary">Back (Home)</button>
+            </nz-form-control>
+            <nz-form-control>
+                <button nz-button nzType="default">Filter</button>
+                <span> &nbsp;&nbsp;</span>
+                <button nz-button nzType="default">Reset</button>
+            </nz-form-control>
+        </nz-form-item>
+    </form>
+</div>

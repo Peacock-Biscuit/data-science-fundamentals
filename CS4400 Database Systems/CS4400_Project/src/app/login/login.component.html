@@ -1,0 +1,23 @@
+<div class="login"> 
+<h1>Georgia Tech Covid Testing 2020</h1> <br /><br />
+<form nz-form class="login-form" [formGroup]="validateForm">
+  <nz-form-item>
+    <nz-form-control nzErrorTip="Please input your username!">
+      <nz-input-group nzPrefixIcon="user">
+        <input formControlName="userName" type="text" nz-input placeholder="Username" />
+      </nz-input-group>
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-control nzErrorTip="Please input your Password!">
+      <nz-input-group nzPrefixIcon="lock">
+        <input formControlName="password" type="password" nz-input placeholder="Password" />
+      </nz-input-group>
+    </nz-form-control>
+  </nz-form-item>
+  <button nz-button class="login-form-button login-form-margin" [nzType]="'primary'" (click)="login($event)">Log in</button>
+  <h2 *ngIf="loggedIn">Log in successful!</h2>
+  <h2 *ngIf="loginFailed">Log in failed!</h2>
+  Or <a routerLink="/register"> register now! </a>
+</form>
+</div>

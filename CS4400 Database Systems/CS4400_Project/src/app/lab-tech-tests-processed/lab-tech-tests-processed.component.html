@@ -1,0 +1,40 @@
+<div class="lab-tech-tests-processed">
+  <form nz-form>
+      <h1>Lab Tech Tests Processed</h1>
+      <nz-form-label> Date Tested </nz-form-label>
+      <nz-range-picker></nz-range-picker>
+      <br />
+      <nz-form-label> Test Result </nz-form-label>
+      <nz-select style="width: 30%;">
+          <nz-option nzValue="ALL" nzLabel="ALL"></nz-option>
+          <nz-option nzValue="Positive" nzLabel="Positive"></nz-option>
+          <nz-option nzValue="Negative" nzLabel="Negative"></nz-option>
+      </nz-select> 
+      <nz-table #screen8table [nzData]="listOfData" nzTableLayout="fixed">
+        <thead>
+          <tr >
+            <th *ngFor="let column of listOfColumn" [nzSortFn]="column.compare" [nzSortPriority]="column.priority">{{ column.title }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let data of screen8table.data">
+              <td>{{ data.testID }}</td>
+              <td>{{ data.poolID }}</td>
+              <td>{{ data.dateTested }}</td>
+              <td>{{ data.dateProcessed }}</td>
+              <td>{{ data.result }}</td>
+          </tr>
+        </tbody>
+      </nz-table>
+      <nz-form-item>
+        <nz-form-control>
+          <button nz-button nzType="primary">Back (Home)</button>
+        </nz-form-control>
+        <nz-form-control>
+          <button nz-button nzType="default">Filter</button>
+          <span> &nbsp;&nbsp;</span>
+          <button nz-button nzType="default">Reset</button>
+        </nz-form-control>
+      </nz-form-item>
+  </form>
+</div>

@@ -1,0 +1,44 @@
+<div class="view-pools">
+  <form nz-form>
+      <h1>View Pools</h1>
+      <nz-form-label> Date Processed </nz-form-label>
+      <nz-range-picker></nz-range-picker>
+      &nbsp;
+      <nz-form-label> Pool Status </nz-form-label>
+      <nz-select>
+          <nz-option nzValue="ALL" nzLabel="ALL"></nz-option>
+          <nz-option nzValue="Positive" nzLabel="Positive"></nz-option>
+          <nz-option nzValue="Negative" nzLabel="Negative"></nz-option>
+          <nz-option nzValue="Pending" nzLabel="Pending"></nz-option>
+      </nz-select> 
+      <br>
+      <nz-form-label> Processed By </nz-form-label>
+        <input nz-input placeholder="Name" [(ngModel)]="value" /> 
+      <nz-table #screen9table [nzData]="listOfData" nzTableLayout="fixed">
+        <thead>
+          <tr>
+              <th *ngFor="let column of listOfColumn" [nzSortFn]="column.compare" [nzSortPriority]="column.priority">{{ column.title }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let data of screen9table.data">
+            <td>{{ data.poolID }}</td>
+            <td>{{ data.testIDs }}</td>
+            <td>{{ data.dateProcessed }}</td>
+            <td>{{ data.processedBy }}</td>
+            <td>{{ data.poolStatus }}</td>
+          </tr>
+        </tbody>
+      </nz-table>
+      <nz-form-item>
+        <nz-form-control>
+          <button nz-button nzType="primary">Back (Home)</button>
+        </nz-form-control>
+        <nz-form-control>
+          <button nz-button nzType="default">Filter</button>
+          <span> &nbsp;&nbsp;</span>
+          <button nz-button nzType="default">Reset</button>
+        </nz-form-control>
+      </nz-form-item>
+  </form>
+</div>

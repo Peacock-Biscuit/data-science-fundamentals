@@ -1,0 +1,112 @@
+<div class="login"> 
+    <h1>Registration</h1> <br /><br />
+     <form nz-form [formGroup]="validateForm">
+        <nz-form-item>
+            <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired nzFor="user">Username</nz-form-label>
+            <nz-form-control [nzSm]="14" [nzXs]="24">
+              <input nz-input formControlName="user" id="user" />
+            </nz-form-control>
+          </nz-form-item>
+        <nz-form-item>
+          <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired nzFor="email">E-mail</nz-form-label>
+          <nz-form-control [nzSm]="14" [nzXs]="24" nzErrorTip="The input is not valid E-mail!">
+            <input nz-input formControlName="email" id="email" />
+          </nz-form-control>
+        </nz-form-item>
+
+        <nz-form-item>
+            <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired nzFor="fname">First Name</nz-form-label>
+            <nz-form-control [nzSm]="14" [nzXs]="24">
+              <input nz-input formControlName="fname" id="fname" />
+            </nz-form-control>
+          </nz-form-item>
+
+          <nz-form-item>
+            <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired nzFor="lname">Last Name</nz-form-label>
+            <nz-form-control [nzSm]="14" [nzXs]="24">
+              <input nz-input formControlName="lname" id="lname" />
+            </nz-form-control>
+          </nz-form-item>
+
+        <nz-form-item>
+          <nz-form-label [nzSm]="6" [nzXs]="24" nzFor="password" nzRequired>Password</nz-form-label>
+          <nz-form-control [nzSm]="14" [nzXs]="24" nzErrorTip="Please input your password!">
+            <input nz-input type="password" id="password" formControlName="password" (ngModelChange)="updateConfirmValidator()" />
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label [nzSm]="6" [nzXs]="24" nzFor="checkPassword" nzRequired>Confirm Password</nz-form-label>
+          <nz-form-control [nzSm]="14" [nzXs]="24" [nzErrorTip]="errorTpl">
+            <input nz-input type="password" formControlName="checkPassword" id="checkPassword" />
+            <ng-template #errorTpl let-control>
+                <ng-container *ngIf="control.hasError('size')">
+                    Password not long enough
+                  </ng-container>
+              <ng-container *ngIf="control.hasError('required')">
+                Please confirm your password!
+              </ng-container>
+              <ng-container *ngIf="control.hasError('confirm')">
+                Two passwords that you enter is inconsistent!
+              </ng-container>
+            </ng-template>
+          </nz-form-control>
+        </nz-form-item>
+        
+       
+        <nz-form-item>
+            <nz-form-label [nzSpan]="6" nzRequired>Role</nz-form-label>
+            <nz-form-control [nzSpan]="14">
+              <input type="radio" value="Student" (change)="radioChangeHandler($event)" name="role">Student    
+              <input type="radio" value="Employee" (change)="radioChangeHandler($event)" name="role">Employee
+            </nz-form-control>
+          </nz-form-item>
+          <div *ngIf="selectedRole == 'Student'">
+            <nz-form-item>
+                <nz-form-label [nzSpan]="6">Housing</nz-form-label>
+                <nz-form-control [nzSpan]="14">
+                    <select #t (change)="housingTypeCall(t.value)">
+                        <option *ngFor="let type of types" [value]="type">{{type}}</option>
+                      </select>
+                </nz-form-control>
+              </nz-form-item>
+              <nz-form-item>
+                <nz-form-label [nzSpan]="6">Location</nz-form-label>
+                <nz-form-control [nzSpan]="14">
+                    <select #loc (change)="locationCall(loc.value)">
+                        <option *ngFor="let loc of locations" [value]="loc">{{loc}}</option>
+                      </select>
+                </nz-form-control>
+              </nz-form-item>
+          </div>
+          <div *ngIf="selectedRole == 'Employee'">
+            <nz-form-item>
+                <nz-form-label [nzSm]="6" [nzXs]="24" nzFor="phoneNumber" nzRequired>Phone Number</nz-form-label>
+                <nz-form-control
+                  [nzSm]="14"
+                  [nzXs]="24"
+                  [nzValidateStatus]="validateForm.controls['phoneNumber']"
+                  nzErrorTip="Please input your phone number!"
+                >
+                  <nz-input-group>
+                    <input formControlName="phoneNumber" id="'phoneNumber'" nz-input />
+                  </nz-input-group>
+                </nz-form-control>
+              </nz-form-item>
+              <nz-form-item>
+                <nz-form-label [nzSpan]="6" nzRequired>Employee Role</nz-form-label>
+                <nz-form-control [nzSpan]="16">
+                    <input type="checkbox" id="employee1" name="employee1" value="siteTester" (change)="siteTesterChangeHandler($event)">
+                    <label for="vehicle1"> Site Tester</label><br>
+                    <input type="checkbox" id="employee2" name="employee2" value="labTech" (change)="labTechChangeHandler($event)">
+                    <label for="vehicle2"> Lab Technician</label><br>
+                </nz-form-control>
+              </nz-form-item>
+          </div>
+        <br />
+        <nz-form-item nz-row class="register-area">
+          <nz-form-control [nzSpan]="14" [nzOffset]="6">
+            <button nz-button nzType="primary" (click)="onSubmit($event)"><a [routerLink]=router>Register</a></button>
+          </nz-form-control>
+        </nz-form-item>
+      </form>
+    </div>

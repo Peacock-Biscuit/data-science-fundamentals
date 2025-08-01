@@ -1,0 +1,58 @@
+<div class="view-appointment"> 
+    <form nz-form>
+        <nz-form-label> View Appointments </nz-form-label>
+        <nz-form-item>
+            <nz-form-label> Appointment Site </nz-form-label>
+            <a nz-dropdown [nzDropdownMenu]="menu">
+                Site Name
+                <i nz-icon nzType="down"></i>
+              </a>
+              <nz-dropdown-menu #menu="nzDropdownMenu">
+                <ul nz-menu nzSelectable>
+                  <li nz-menu-item>1st site name</li>
+                  <li nz-menu-item>2nd site name</li>
+                  <li nz-menu-item>3rd site name</li>
+                </ul>
+              </nz-dropdown-menu>
+        </nz-form-item >
+        <nz-form-item> 
+            <nz-form-label> Appointment Start Date </nz-form-label>
+            <nz-form-control>
+              <input nz-input name="appointmentStartDate" type="date" id="appointmentStartDate">
+            </nz-form-control>
+        </nz-form-item>
+        <nz-form-item> 
+            <nz-form-label> Appointment End Date </nz-form-label>
+            <nz-form-control>
+              <input nz-input name="appointmentEndDate" type="date" id="appointmentEndDate">
+            </nz-form-control>
+        </nz-form-item>
+        <nz-form-item> 
+            <nz-form-label> Appointment Start Time </nz-form-label>
+            <nz-form-control>
+              <input nz-input name="appointmentStartTime" type="time" id="appointmentStartTime">
+            </nz-form-control>
+        </nz-form-item>
+        <nz-form-item> 
+            <nz-form-label> Appointment End Time </nz-form-label>
+            <nz-form-control>
+              <input nz-input name="appointmentEndTime" type="time" id="appointmentEndTime">
+            </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+            <nz-form-control>
+                <nz-radio-group>
+                    <label nz-radio nzValue="onlyBooked">Show Booked Only</label><br>
+                    <label nz-radio nzValue="onlyAvailable">Show Available Only</label><br>
+                    <label nz-radio nzValue="all">Show All</label><br>
+                  </nz-radio-group>
+              </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+            <nz-form-control>
+                <button nz-button nzType="primary">Submit</button>
+              </nz-form-control>
+        </nz-form-item>
+        
+      </form>
+</div>

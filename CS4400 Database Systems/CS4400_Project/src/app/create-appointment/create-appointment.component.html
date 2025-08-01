@@ -1,0 +1,36 @@
+<div class="create-appointment"> 
+    <form nz-form>
+        <nz-form-label> Create Appointment </nz-form-label>
+        <nz-form-item>
+            <nz-form-label> Appointment Site </nz-form-label>
+            <a nz-dropdown [nzDropdownMenu]="menu">
+                Site Name
+                <i nz-icon nzType="down"></i>
+              </a>
+              <nz-dropdown-menu #menu="nzDropdownMenu">
+                <ul nz-menu nzSelectable>
+                  <li nz-menu-item>1st site name</li>
+                  <li nz-menu-item>2nd site name</li>
+                  <li nz-menu-item>3rd site name</li>
+                </ul>
+              </nz-dropdown-menu>
+        </nz-form-item >
+        <nz-form-item> 
+            <nz-form-label> Appointment Date </nz-form-label>
+            <nz-form-control>
+              <input nz-input name="appointmentDate" type="date" id="appointmentDate">
+            </nz-form-control>
+        </nz-form-item>
+        <nz-form-item> 
+            <nz-form-label> Appointment Time </nz-form-label>
+            <nz-form-control>
+              <input nz-input name="appointmentTime" type="time" id="appointmentTime">
+            </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+            <nz-form-control>
+                <button nz-button nzType="primary">Submit</button>
+              </nz-form-control>
+        </nz-form-item>
+      </form>
+</div>
