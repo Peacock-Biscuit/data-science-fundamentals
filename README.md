@@ -14,6 +14,8 @@ Together, this background supports work in areas such as:
 
 * Data engineering and scalable systems
 
+Besides, a wiki is ongoing to review important concepts in Data Science.
+
 ## Statistics Courses
 
 Testing Statistical Hypotheses
