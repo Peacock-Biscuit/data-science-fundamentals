@@ -55,7 +55,7 @@ Systems for Machine Learning
 ## License
 This repository is licensed under the [GNU Affero General Public License](LICENSE) 
 ```
-DataScienceWork is to demonstrate a variety of data science methods, tools and their applications.
+data-science-fundamentals is to demonstrate a variety of data science methods, tools and their applications.
 Copyright (C) 2025  Jim Liu
 
 This program is free software: you can redistribute it and/or modify
