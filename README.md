@@ -56,7 +56,7 @@ Systems for Machine Learning
 This repository is licensed under the [GNU Affero General Public License](LICENSE) 
 ```
 data-science-fundamentals is to demonstrate a variety of data science methods, tools and their applications.
-Copyright (C) 2025  Jim Liu
+Copyright (C) 2026  Jim Liu
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as published by
