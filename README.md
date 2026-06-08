@@ -1,6 +1,6 @@
 # Data Science Skills
 
-This repository highlights coursework in Statistics and Computer Science that forms the foundation for modern data science and machine learning practice. These courses were chosen for their emphasis on both theoretical understanding and practical application, which are essential for solving real-world data problems and contributing to research in computational fields.
+This repository highlights methodologies in Statistics and Computer Science that forms the foundation for modern data science and machine learning practice. Such knowledge chosen for their emphasis on both theoretical understanding and practical application, which are essential for solving real-world data problems and contributing to research in computational fields.
 
 From core topics like regression, hypothesis testing, and multivariate analysis to advanced areas such as Bayesian inference, data mining, and machine learning systems, these courses provide a deep grounding in how to reason with data, design experiments, build predictive models, and evaluate results with statistical rigor.
 
