@@ -2,37 +2,48 @@
 
 This repository provides open-source implementations of statistical 
 and machine learning methodology — covering Bayesian inference, 
-probabilistic modeling, regression, statistical learning, and 
-computational statistics — using production-grade Python libraries 
-including PyMC3, scikit-learn, statsmodels, and pandas.
+probabilistic modeling, causal reasoning, regression, statistical 
+learning, and time series analysis — using production-grade Python 
+and R libraries.
 
 The goal is to make rigorous statistical and machine learning methods 
 accessible to practitioners and researchers, bridging academic theory 
 and practical implementation.
 
-## Highlighted Implementation
+## Highlighted Implementations
 
 **Bayesian-Statistics/Demo** — PyMC3 Bayesian network implementation 
 demonstrating probabilistic graphical modeling and Bayesian inference, 
 reflecting the class of methodology applied in production decision 
 intelligence and causal AI systems.
 
+**Time-Series-Analysis** — ARIMA, ARMA-GARCH, and VAR implementations 
+applied to real financial time series (currency exchange rates, growth 
+rate data), covering volatility modeling, model selection, and 
+rolling forecast evaluation.
+
+**Machine-Learning** — End-to-end ML project applying supervised and 
+unsupervised learning to IEEE-CIS fraud detection data, alongside 
+core algorithm implementations covering classification, regression, 
+and probabilistic modeling.
+
 ## Topics Covered
 
 - Bayesian Statistics — PyMC3 implementations including Bayesian networks
+- Time Series Analysis — ARIMA, GARCH, and VAR modeling and forecasting
+- Machine Learning — supervised and unsupervised learning implementations
 - Statistical Inference — hypothesis testing, A/B testing frameworks
 - Regression Analysis — including propensity score methods
 - Computational Statistics — simulation, MCMC, resampling methods
 - Data Mining and Statistical Learning
 - Multivariate Statistics
-- Machine Learning
-- Time Series Analysis
 - Database Systems
 - Information Visualization
 
-## Libraries Used
+## Libraries
 
-PyMC3 · scikit-learn · statsmodels · pandas · NumPy · matplotlib
+Python: PyMC3 · scikit-learn · pandas · NumPy · matplotlib · statsmodels  
+R: forecast · tseries · vars · rugarch · fGarch
 
 ## License
 This repository is licensed under the [GNU Affero General Public License](LICENSE) 
