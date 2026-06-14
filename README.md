@@ -1,56 +1,38 @@
 # Data Science Skills
 
-This repository highlights methodologies in Statistics and Computer Science that forms the foundation for modern data science and machine learning practice. Such knowledge chosen for their emphasis on both theoretical understanding and practical application, which are essential for solving real-world data problems and contributing to research in computational fields.
+This repository provides open-source implementations of statistical 
+and machine learning methodology — covering Bayesian inference, 
+probabilistic modeling, regression, statistical learning, and 
+computational statistics — using production-grade Python libraries 
+including PyMC3, scikit-learn, statsmodels, and pandas.
 
-From core topics like regression, hypothesis testing, and multivariate analysis to advanced areas such as Bayesian inference, data mining, and machine learning systems, these courses provide a deep grounding in how to reason with data, design experiments, build predictive models, and evaluate results with statistical rigor.
+The goal is to make rigorous statistical and machine learning methods 
+accessible to practitioners and researchers, bridging academic theory 
+and practical implementation.
 
-In parallel, the computer science coursework strengthens computational skills — from data structures and systems-level programming to neural networks, data visualization, and distributed ML infrastructure — ensuring the ability to build and deploy scalable, research-grade analytical tools.
+## Highlighted Implementation
 
-Together, this background supports work in areas such as:
+**Bayesian-Statistics/Demo** — PyMC3 Bayesian network implementation 
+demonstrating probabilistic graphical modeling and Bayesian inference, 
+reflecting the class of methodology applied in production decision 
+intelligence and causal AI systems.
 
-* Machine learning theory and application
+## Topics Covered
 
-* Probabilistic modeling and Bayesian inference
+- Bayesian Statistics — PyMC3 implementations including Bayesian networks
+- Statistical Inference — hypothesis testing, A/B testing frameworks
+- Regression Analysis — including propensity score methods
+- Computational Statistics — simulation, MCMC, resampling methods
+- Data Mining and Statistical Learning
+- Multivariate Statistics
+- Machine Learning
+- Time Series Analysis
+- Database Systems
+- Information Visualization
 
-* Data engineering and scalable systems
+## Libraries Used
 
-Besides, a wiki is ongoing to review important concepts in Data Science.
-
-## Statistics Courses
-
-Testing Statistical Hypotheses
-
-Time Series Analysis
-
-Theoretical Statistics
-
-Regression Analysis
-
-Computational Statistics
-
-Bayesian Statistics
-
-Multivariate Data Analysis
-
-Data Mining and Statistical Learning
-
-## Computer Science Courses:
-
-Object-Oriented Programming
-
-Data Structures and Algorithms
-
-Computer Organization and Programming
-
-Computer Systems and Networks
-
-Database Systems
-
-Information Visualization
-
-Machine Learning
-
-Systems for Machine Learning
+PyMC3 · scikit-learn · statsmodels · pandas · NumPy · matplotlib
 
 ## License
 This repository is licensed under the [GNU Affero General Public License](LICENSE) 
