@@ -1,7 +1,7 @@
 # Bayesian Statistics 
 
 ## Course Overview
-This repository contains coursework and projects for ISyE6420 Bayesian Statistics, a comprehensive graduate-level course covering Bayesian inference, modeling, and applications.
+This repository contains code implementations and projects for Bayesian Statistics, a comprehensive graduate-level course covering Bayesian inference, modeling, and applications.
 
 ## Course Topics
 
