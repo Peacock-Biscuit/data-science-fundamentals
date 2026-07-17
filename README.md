@@ -7,7 +7,7 @@ learning, and time series analysis — using production-grade Python
 and R libraries.
 
 The goal is to make rigorous statistical and machine learning methods 
-accessible to practitioners and researchers, bridging academic theory 
+accessible to practitioners, bridging academic theory 
 and practical implementation.
 
 ## Highlighted Implementations
