@@ -3,7 +3,7 @@
 This repository provides open-source implementations of statistical 
 and machine learning methodology — covering Bayesian inference, 
 probabilistic modeling, causal reasoning, regression, statistical 
-learning, and time series analysis — using production-grade Python 
+learning, and time series analysis — using Python 
 and R libraries.
 
 The goal is to make rigorous statistical and machine learning methods 
@@ -14,8 +14,7 @@ and practical implementation.
 
 **Bayesian-Statistics/Demo** — PyMC3 Bayesian network implementation 
 demonstrating probabilistic graphical modeling and Bayesian inference, 
-reflecting the class of methodology applied in production decision 
-intelligence and causal AI systems.
+illustrating the foundations of probabilistic graphical modeling and Bayesian inference
 
 **Time-Series-Analysis** — ARIMA, ARMA-GARCH, and VAR implementations 
 applied to real financial time series (currency exchange rates, growth 
